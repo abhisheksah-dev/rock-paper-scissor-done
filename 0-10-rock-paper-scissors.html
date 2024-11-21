@@ -57,15 +57,15 @@ body {
     </p>
     <button onclick="
 playerGame('rock');
-" class="move-button"><img src="rock-emoji.png" class="move-icon" alt="rock"></button>
+" class="move-button"><img src="/assests/rock-emoji.png" class="move-icon" alt="rock"></button>
 
     <button onclick="
 playerGame('paper');
-  " class="move-button"><img src="paper-emoji.png" class="move-icon" alt="paper"></button>
+  " class="move-button"><img src="/assests/paper-emoji.png" class="move-icon" alt="paper"></button>
 
     <button onclick="
 playerGame('scissors');
-  " class="move-button"> <img src="scissors-emoji.png" class="move-icon" alt="scissors"></button>
+  " class="move-button"> <img src="/assests/scissors-emoji.png" class="move-icon" alt="scissors"></button>
 
     <p class="js-result result"></p>
     <p class="js-moves"></p>
@@ -183,8 +183,8 @@ function playerGame(playerMove) {
     updateScoreElement();
     document.querySelector('.js-result').innerHTML = result;
     document.querySelector('.js-moves').innerHTML = `you picked
- <img src="${playerMove}-emoji.png" class="move-icon" >computer picked
-  <img src="${computerMove}-emoji.png" class="move-icon">`;
+ <img src="/assests/${playerMove}-emoji.png" class="move-icon" >computer picked
+  <img src="/assests/${computerMove}-emoji.png" class="move-icon">`;
 
 
 
